@@ -28,6 +28,8 @@ class Audio: NSObject, AVAudioPlayerDelegate {
         guard let firstTrack = firstTrack else { return }
         guard let secondTrack = secondTrack else { return }
         
+        print(firstTrack)
+        
         do {
             firstPlayer = try AVAudioPlayer(contentsOf: firstTrack)
             secondPlayer = try AVAudioPlayer(contentsOf: secondTrack)
